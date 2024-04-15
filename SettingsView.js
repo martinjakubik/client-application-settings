@@ -10,8 +10,8 @@ class SettingsView {
             const sSettingValue = oSetting.value;
             const oKeyArea = createDiv(`settingKeyArea-${sSettingKey}`, oSettingItem);
             const oValueArea = createDiv(`settingValueArea-${sSettingKey}`, oSettingItem);
-            createParagraph(`settingKey-${settingKey}`, sSettingKey, oKeyArea);
-            createParagraph(`settingValue-${settingKey}`, sSettingValue, oValueArea);
+            createParagraph(`settingKey-${sSettingKey}`, sSettingKey, oKeyArea);
+            createParagraph(`settingValue-${sSettingKey}`, sSettingValue, oValueArea);
         });
     }
 }
