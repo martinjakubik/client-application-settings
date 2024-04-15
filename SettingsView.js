@@ -1,4 +1,4 @@
-import { createDiv } from "learnhypertext";
+import { createDiv, createParagraph } from './learnhypertext.mjs';
 
 class SettingsView {
     static render(aSettings) {
@@ -8,8 +8,10 @@ class SettingsView {
             const oSettingItem = createDiv(`settingItem${nIndex}`, oSettingsList);
             const sSettingKey = oSetting.key;
             const sSettingValue = oSetting.value;
-            createDiv(`settingKey-${sSettingKey}`, oSettingItem);
-            createDiv(`settingValue-${sSettingValue}`, oSettingItem);
+            const oKeyArea = createDiv(`settingKeyArea-${sSettingKey}`, oSettingItem);
+            const oValueArea = createDiv(`settingValueArea-${sSettingKey}`, oSettingItem);
+            createParagraph(`settingKey-${settingKey}`, sSettingKey, oKeyArea);
+            createParagraph(`settingValue-${settingKey}`, sSettingValue, oValueArea);
         });
     }
 }

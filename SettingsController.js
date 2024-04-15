@@ -1,4 +1,4 @@
-import SettingsView from SettingsView;
+import { SettingsView } from './SettingsView.js';
 
 class SettingsController {
     constructor(aSettings) {
@@ -9,6 +9,8 @@ class SettingsController {
         this.aSettings.forEach(oSetting => {
             console.log(`key: ${oSetting.key} value: ${oSetting.value}`);
         })
-        SettingsView.renderSettings(this.aSettings);
+        SettingsView.render(this.aSettings);
     }
 }
+
+export { SettingsController };
