@@ -10,6 +10,10 @@
   },
   "author": "martin jakubik",
   "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinjakubik/client-application-settings.git"
+  },
   "dependencies": {
     "learnhypertext": "^2.1.0"
   },
