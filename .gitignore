@@ -1,6 +1,7 @@
 .DS_Store
 
 build
+lib
 
 # Dependency directories
 node_modules/
