@@ -1,5 +1,4 @@
 import { createDiv } from "learnhypertext";
-import * from "./lib/learnhypertext.mjs";
 
 class SettingsView {
     static render(aSettings) {
