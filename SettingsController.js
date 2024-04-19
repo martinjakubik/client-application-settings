@@ -6,9 +6,6 @@ class SettingsController {
     }
 
     renderSettings() {
-        this.aSettings.forEach(oSetting => {
-            console.log(`key: ${oSetting.key} value: ${oSetting.value}`);
-        })
         SettingsView.render(this.aSettings);
     }
 }
